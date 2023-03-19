@@ -23,13 +23,13 @@ int main(){
     int height = bh.height;
     int width = bh.width;
 
-    char *Image = calloc(height*width,sizeof(int));
+    char *Image = calloc(height*width,3);
     if(Image == NULL){
         printf("Coudn't execute calloc");
         return 2;
     }
 
-    for(int i = 0; i < height*width*sizeof(int);i++)
+    for(int i = 0; i < height*width*3;i++)
         Image[i] = GAMMA((float)fgetc(fp));
 
     FILE *output_fp;
