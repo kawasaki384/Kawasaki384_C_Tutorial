@@ -90,7 +90,7 @@ int main()
                 b[b_position - i] = tmp[i];
             }
 
-            for (int n = 0; n < 5; n++) {
+            for (int n = 0; n < DNA_LEN; n++) {
                 GA[_A][n] = a[n];
                 GA[_B][n] = b[n];
             }
